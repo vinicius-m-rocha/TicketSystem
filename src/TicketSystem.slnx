@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/TicketSystem.BuildingBlocks/TicketSystem.BuildingBlocks.csproj" />
+  </Folder>
+</Solution>
