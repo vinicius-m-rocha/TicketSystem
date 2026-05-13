@@ -1,0 +1,21 @@
+version: '3.8'
+name: ticket-system
+
+services:
+  identity-db:
+    image: postgres:latest
+    container_name: ticket-system-postgres
+
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Password@123
+      - POSTGRES_DB=TicketSystem_Identity
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+volumes:
+  postgres_data:
